@@ -1,0 +1,32 @@
+<svg width="32" height="32" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="greenGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4CAF50;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#2196F3;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="leafGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#66BB6A;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#4CAF50;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background Circle -->
+  <circle cx="32" cy="32" r="30" fill="url(#greenGradient)" stroke="#2E7D32" stroke-width="2"/>
+  
+  <!-- Main Leaf -->
+  <path d="M20 35 Q28 20 40 28 Q35 40 25 42 Q18 38 20 35 Z" fill="url(#leafGradient)" stroke="#2E7D32" stroke-width="1"/>
+  
+  <!-- Secondary Leaf -->
+  <path d="M35 25 Q45 15 52 25 Q48 35 40 37 Q32 30 35 25 Z" fill="#81C784" stroke="#2E7D32" stroke-width="1"/>
+  
+  <!-- Small Leaf -->
+  <path d="M15 45 Q22 38 28 42 Q25 48 20 49 Q14 47 15 45 Z" fill="#A5D6A7" stroke="#2E7D32" stroke-width="1"/>
+  
+  <!-- Eco Symbol -->
+  <g stroke="#FFFFFF" stroke-width="2" fill="none">
+    <path d="M32 40 Q28 36 32 32 Q36 36 32 40" stroke-linecap="round"/>
+    <circle cx="30" cy="34" r="1" fill="#FFFFFF"/>
+    <circle cx="34" cy="34" r="1" fill="#FFFFFF"/>
+    <circle cx="32" cy="38" r="1" fill="#FFFFFF"/>
+  </g>
+</svg>

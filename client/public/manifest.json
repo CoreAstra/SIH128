@@ -1,0 +1,22 @@
+{
+  "short_name": "EcoConnect",
+  "name": "EcoConnect - Green Rewards Platform",
+  "description": "Swadeshi Green Rewards for an Atmanirbhar Bharat",
+  "icons": [
+    {
+      "src": "favicon.svg",
+      "sizes": "64x64",
+      "type": "image/svg+xml"
+    },
+    {
+      "src": "favicon-32x32.svg",
+      "sizes": "32x32",
+      "type": "image/svg+xml"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#4CAF50",
+  "background_color": "#E8F5E8",
+  "categories": ["environment", "sustainability", "utilities"]
+}

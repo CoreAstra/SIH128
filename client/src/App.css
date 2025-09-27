@@ -1,0 +1,19 @@
+.App {
+  text-align: center;
+}
+
+/* Global theme colors */
+:root {
+  --primary-green: #4CAF50;
+  --secondary-green: #66BB6A;
+  --light-green: #C8E6C9;
+  --dark-green: #2E7D32;
+  --accent-blue: #2196F3;
+  --light-blue: #E3F2FD;
+  --warm-yellow: #FFC107;
+  --orange: #FF9800;
+  --white: #FFFFFF;
+  --light-gray: #F5F5F5;
+  --text-dark: #333333;
+  --text-light: #666666;
+}

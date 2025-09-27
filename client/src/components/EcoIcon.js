@@ -1,0 +1,57 @@
+import React from 'react';
+import styled from 'styled-components';
+
+const EcoIcon = ({ size = "32" }) => {
+  return (
+    <IconSvg width={size} height={size} viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <linearGradient id="greenGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+          <stop offset="0%" style={{stopColor: '#4CAF50', stopOpacity: 1}} />
+          <stop offset="100%" style={{stopColor: '#2196F3', stopOpacity: 1}} />
+        </linearGradient>
+        <linearGradient id="leafGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+          <stop offset="0%" style={{stopColor: '#66BB6A', stopOpacity: 1}} />
+          <stop offset="100%" style={{stopColor: '#4CAF50', stopOpacity: 1}} />
+        </linearGradient>
+      </defs>
+      
+      {/* Background Circle */}
+      <circle cx="32" cy="32" r="30" fill="url(#greenGradient)" stroke="#2E7D32" strokeWidth="2"/>
+      
+      {/* Main Leaf */}
+      <path d="M20 35 Q28 20 40 28 Q35 40 25 42 Q18 38 20 35 Z" fill="url(#leafGradient)" stroke="#2E7D32" strokeWidth="1"/>
+      
+      {/* Secondary Leaf */}
+      <path d="M35 25 Q45 15 52 25 Q48 35 40 37 Q32 30 35 25 Z" fill="#81C784" stroke="#2E7D32" strokeWidth="1"/>
+      
+      {/* Small Leaf */}
+      <path d="M15 45 Q22 38 28 42 Q25 48 20 49 Q14 47 15 45 Z" fill="#A5D6A7" stroke="#2E7D32" strokeWidth="1"/>
+      
+      {/* Eco Symbol */}
+      <g stroke="#FFFFFF" strokeWidth="2" fill="none">
+        <path d="M32 40 Q28 36 32 32 Q36 36 32 40" strokeLinecap="round"/>
+        <circle cx="30" cy="34" r="1" fill="#FFFFFF"/>
+        <circle cx="34" cy="34" r="1" fill="#FFFFFF"/>
+        <circle cx="32" cy="38" r="1" fill="#FFFFFF"/>
+      </g>
+      
+      {/* Connection lines */}
+      <g stroke="#E8F5E8" strokeWidth="1" opacity="0.6">
+        <line x1="25" y1="30" x2="35" y2="25"/>
+        <line x1="40" y1="32" x2="25" y2="42"/>
+      </g>
+    </IconSvg>
+  );
+};
+
+const IconSvg = styled.svg`
+  display: inline-block;
+  vertical-align: middle;
+  transition: transform 0.3s ease;
+  
+  &:hover {
+    transform: rotate(5deg) scale(1.05);
+  }
+`;
+
+export default EcoIcon;
